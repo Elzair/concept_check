@@ -8,3 +8,5 @@ target_include_directories(boost_concept_check BEFORE INTERFACE ${CMAKE_CURRENT_
 
 install(TARGETS boost_concept_check DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::concept_check ALIAS boost_concept_check)
